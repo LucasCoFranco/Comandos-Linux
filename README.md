@@ -1,2 +1,2 @@
 # Comandos-Linux
-Comandos aprendidos no Curso do Senai de Informática 
+Comandos aprendidos no Curso de Administração de Redes Linux do Senai de Informática São Caetano do Sul
