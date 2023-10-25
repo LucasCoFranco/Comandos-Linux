@@ -1,0 +1,8 @@
+Preparando o Debian
+
+Comando para alterar o nome do computador no debian
+hostnamectl set-hostname "nome"
+
+Para alterar para o root
+su -
+
