@@ -6,3 +6,5 @@ hostnamectl set-hostname "nome"
 Para alterar para o root
 su -
 
+Aplicativo para baixar arquivos torrent no Linux - Transmission (geralmente ja vem instalado)
+
