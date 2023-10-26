@@ -11,7 +11,11 @@ iface enp0s3 inet dhcp
 
 auto enp0s8
 allow-hotplug enp0s8
-ifac
+iface enp0s8 inet static
+0.0.0.0/24 - ip desejado
+
+Para restaurar as configuracoes de rede
+systemctl restart networking.service
 
 Modo NAT
 Cria uma rede interna e transforma o servidor num servico de broadcast
