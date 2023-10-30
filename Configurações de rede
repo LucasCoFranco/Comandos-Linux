@@ -17,6 +17,16 @@ iface enp0s8 inet static
 Para restaurar as configuracoes de rede
 systemctl restart networking.service
 
+apt update 
+
+Comandos do iptables
+apt install iptables -y
+echo 1 > /proc/sys/net/ipv4/ip_forward
+iptables -t nat -A POSTROUTING -o enp0s3 -j MASQUERADE
+
+comando para mostrar as regras do iptables (mostra quantos pacotes foi passado pelo servidor)
+watch iptables -t nat -nvL
+
 Modo NAT
 Cria uma rede interna e transforma o servidor num servico de broadcast
 comunicacao da rede interna com  rede externa
