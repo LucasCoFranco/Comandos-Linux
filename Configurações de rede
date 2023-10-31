@@ -16,6 +16,8 @@ iface enp0s8 inet static
 
 Para restaurar as configuracoes de rede
 systemctl restart networking.service
+ou
+ifup --all
 
 apt update 
 
