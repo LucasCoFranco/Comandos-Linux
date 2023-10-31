@@ -41,6 +41,12 @@ Cria uma rede interna e transforma o servidor num servico de broadcast
 comunicacao da rede interna com  rede externa
 
 
+MEU IP 
+192.168.60.0
+
+comando para resetar todas as configuracoes da maquina
+ifdown --all
+
 quebrar hashs 
 hydra 
 hashcat
