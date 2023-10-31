@@ -4,6 +4,7 @@ ex: -- 172.16.50.10/24 Maquina fisica
         172.16.50.17/24 Maquina virtual
 
 nano /etc/network/interfaces
+configuracoes da rede no /etc/network/interfaces
 auto enp0s3
 allow-hotplug enp0s3
 iface enp0s3 inet dhcp  
@@ -12,7 +13,7 @@ iface enp0s3 inet dhcp
 auto enp0s8
 allow-hotplug enp0s8
 iface enp0s8 inet static
-0.0.0.0/24 - ip desejado
+0.0.0.0/24 - ip desejado //
 
 Para restaurar as configuracoes de rede
 systemctl restart networking.service
