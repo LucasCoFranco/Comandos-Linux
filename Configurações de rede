@@ -2,7 +2,14 @@ Modo bridge
 A maquina virtual pega um ip na mesma rede da maquina fisica
 ex: -- 172.16.50.10/24 Maquina fisica
         172.16.50.17/24 Maquina virtual
+Modo NAT
+Cria uma rede interna e transforma o servidor num servico de broadcast
+comunicacao da rede interna com  rede externa
 
+alterar para super usuario no debian 11.6
+su -
+
+Configurar rede
 nano /etc/network/interfaces
 configuracoes da rede no /etc/network/interfaces
 auto enp0s3
@@ -19,6 +26,9 @@ Para restaurar as configuracoes de rede
 systemctl restart networking.service
 ou
 ifup --all
+ou 
+/etc/init.d/networking restart
+/etc/init.d/networking status 
 
 apt update 
 
@@ -37,11 +47,6 @@ pressionar i para insert (vim)
 #!/bin/bash
 iptables -t nat -A POSTROUTING -o ens0p3 -j MASQUERADE
 e para salvar no vim apertar ESC shift zz
-
-
-Modo NAT
-Cria uma rede interna e transforma o servidor num servico de broadcast
-comunicacao da rede interna com  rede externa
 
 
 MEU IP 
