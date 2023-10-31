@@ -27,6 +27,20 @@ iptables -t nat -A POSTROUTING -o enp0s3 -j MASQUERADE
 comando para mostrar as regras do iptables (mostra quantos pacotes foi passado pelo servidor)
 watch iptables -t nat -nvL
 
+comando para salvar e executar a configuracao sempre que o SO for ligado/reiniciado
+vim/nano.tiny /etc/profile.d/iptables.sh
+nele coloquei 
+pressionar i para insert (vim)
+#!/bin/bash
+iptables -t nat -A POSTROUTING -o ens0p3 -j MASQUERADE
+e para salvar no vim apertar ESC shift zz
+
+
 Modo NAT
 Cria uma rede interna e transforma o servidor num servico de broadcast
 comunicacao da rede interna com  rede externa
+
+
+quebrar hashs 
+hydra 
+hashcat
