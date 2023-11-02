@@ -49,6 +49,9 @@ e para salvar no vim apertar ESC shift zz
 MEU IP 
 192.168.60.1
 
+dns senai
+172.16.52.10
+
 comando para resetar todas as configuracoes da maquina
 ifdown --all
 
