@@ -45,6 +45,19 @@ pressionar i para insert (vim)
 iptables -t nat -A POSTROUTING -o ens0p3 -j MASQUERADE
 e para salvar no vim apertar ESC shift zz
 
+se o apt update nao estiver atualizando ou esta atualizando com erro
+vim.tiny /etc/apt/sources.list
+comentar tudo e escrever o seguinte:
+deb https://deb.debian.org/debian/ bullseye main
+
+depois atualizaar com o 
+apt update -y
+
+instalar o isc dhcp para baixar o dhcp dinamico
+apt install -y isc-shcp-server (se dar erro quer dizer que deu certo)
+
+para configurar o dhcp dinamico
+vim.tiny /etc/default/isc-dhcp-server e escrever na INTERFACESv4 ou 6, a interface de rede que quer uma rede, no caso coloquei enp0s8
 
 MEU IP 
 192.168.60.1
