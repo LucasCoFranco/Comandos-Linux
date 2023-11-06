@@ -50,7 +50,7 @@ vim.tiny /etc/apt/sources.list
 comentar tudo e escrever o seguinte:
 deb https://deb.debian.org/debian/ bullseye main
 
-depois atualizaar com o 
+depois atualizar com o 
 apt update -y
 
 instalar o isc dhcp para baixar o dhcp dinamico
