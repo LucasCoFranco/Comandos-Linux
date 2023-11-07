@@ -59,6 +59,18 @@ apt install -y isc-shcp-server (se dar erro quer dizer que deu certo)
 para configurar o dhcp dinamico
 vim.tiny /etc/default/isc-dhcp-server e escrever na INTERFACESv4 ou 6, a interface de rede que quer uma rede, no caso coloquei enp0s8
 
+para resetar o servico
+systemctl restart isc-dhcp-server
+
+em caso de erro no passo de cima
+vim.tiny /etc/dhcp/dhcpd.conf
+descomentar as linhas options domain-name e options domain-name-servers
+descer ate o This is very basic subnet declaration e descomentar a linha do subnet, range e option routers e configurar
+essas informacoes de acordo com as suas informacoes da rede
+
+depois de configurado, reiniciar o servico 
+systemctl restart isc-dhcp-server
+
 MEU IP 
 192.168.60.1
 
