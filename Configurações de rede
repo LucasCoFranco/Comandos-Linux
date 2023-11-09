@@ -71,6 +71,9 @@ essas informacoes de acordo com as suas informacoes da rede
 depois de configurado, reiniciar o servico 
 systemctl restart isc-dhcp-server
 
+Para ver os logs (principalmente para logs de erro)
+less +F /var/log/syslog
+
 MEU IP 
 192.168.60.1
 
