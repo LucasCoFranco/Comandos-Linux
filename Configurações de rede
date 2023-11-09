@@ -17,7 +17,7 @@ iface enp0s3 inet dhcp
 auto enp0s8
 allow-hotplug enp0s8
 iface enp0s8 inet static
-0.0.0.0/24 - ip desejado //
+address 0.0.0.0/24 - ip desejado //
 
 Para restaurar as configuracoes de rede
 systemctl restart networking.service
