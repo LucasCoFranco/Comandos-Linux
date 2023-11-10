@@ -86,3 +86,6 @@ ifdown --all
 quebrar hashs 
 hydra 
 hashcat
+
+Para visualizar as conexoes de rede no windows
+apertar Win r e escrever ncpa.cpl
