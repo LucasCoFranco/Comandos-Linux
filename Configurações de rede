@@ -54,7 +54,7 @@ depois atualizar com o
 apt update -y
 
 instalar o isc dhcp para baixar o dhcp dinamico
-apt install -y isc-shcp-server (se dar erro quer dizer que deu certo)
+apt install -y isc-dhcp-server (se dar erro quer dizer que deu certo)
 
 para configurar o dhcp dinamico
 vim.tiny /etc/default/isc-dhcp-server e escrever na INTERFACESv4 ou 6, a interface de rede que quer uma rede, no caso coloquei enp0s8
