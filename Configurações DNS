@@ -4,3 +4,21 @@ apt install -y bind9
 
 para ver o status do servico depois de instalado
 systemctl status bind9
+
+Dominios = Zonas
+ex: google.com
+youtube.com
+amazon.com.br
+
+Entrada 
+www.google.com 
+web.google.com 
+ftp.google.com 
+mail.google.com
+
+Tipos de Entrada
+A       - IPv4
+AAAA    - IPv6
+CNAME   - Apelido (redireciona para outro dominio)
+MX      - E-mail
+PTR     
