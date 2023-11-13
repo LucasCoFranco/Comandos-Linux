@@ -1,1 +1,6 @@
-Conf DNS
+comandos para instalacao e configuracoes para um servidor DNS
+
+apt install -y bind9
+
+para ver o status do servico depois de instalado
+systemctl status bind9
