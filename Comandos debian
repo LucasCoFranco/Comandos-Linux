@@ -7,6 +7,9 @@ bash ##atualiza o terminal
 Para alterar para o root
 su -
 
+comando para ver o ip colorido 
+ip -c a
+
 Aplicativo para baixar arquivos torrent no Linux - Transmission (geralmente ja vem instalado)
 
 Para ver os logs (principalmente para logs de erro)

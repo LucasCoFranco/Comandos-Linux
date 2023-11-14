@@ -21,4 +21,42 @@ A       - IPv4
 AAAA    - IPv6
 CNAME   - Apelido (redireciona para outro dominio)
 MX      - E-mail
-PTR     
+PTR     -
+
+Entrar no diretorio do bind9
+cd /etc/bind
+ls
+
+Criacao de nova zona
+vim.tiny named.conf.default-zones
+ir ate o final das zonas padrao e digitar
+
+zone "nome da zona(corinthians.com)"{
+    type master;
+    file "/etc/bind/db.corinthians.com";
+};
+
+criar o arquivo  da zona
+vim.tiny e escrever a zona
+ou copiar de uma ja criada e editar
+cp db.local db.corinthians.com
+
+comando do vim para substituir algo por outra coisa direto
+ESC :%s/localhost/corinthians.com
+
+ai adicionar a linha em baixo das que ja existe
+www     IN  A   192.168.60.1 #ip
+
+depois restaurar o sistema com 
+systemctl restart bind9
+
+ver se ta rodando 
+systemctl status bind9
+
+depois adicionar no name server
+vim /etc/resolv.conf
+e escrever de baixo das que ja ta escrito
+nameserver 192.168.60.1 #ip
+
+testar usando
+nslookup corinthians.com 192.168.60.1
