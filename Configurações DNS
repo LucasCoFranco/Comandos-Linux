@@ -45,7 +45,7 @@ comando do vim para substituir algo por outra coisa direto
 ESC :%s/localhost/corinthians.com
 
 ai adicionar a linha em baixo das que ja existe
-www     IN  A   192.168.60.1 #ip
+www     IN  A   10.0.2.15 #ip
 
 depois restaurar o sistema com 
 systemctl restart bind9
@@ -56,7 +56,8 @@ systemctl status bind9
 depois adicionar no name server
 vim /etc/resolv.conf
 e escrever de baixo das que ja ta escrito
-nameserver 192.168.60.1 #ip
+nameserver 10.0.2.15 #ip
 
 testar usando
 nslookup corinthians.com 192.168.60.1
+

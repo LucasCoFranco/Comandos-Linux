@@ -14,3 +14,7 @@ Aplicativo para baixar arquivos torrent no Linux - Transmission (geralmente ja v
 
 Para ver os logs (principalmente para logs de erro)
 less +F /var/log/syslog ou tail
+
+comando para atualizar o terminal
+bash
+

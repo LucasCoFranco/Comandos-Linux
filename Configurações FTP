@@ -1,0 +1,21 @@
+FTP - Comando para instalacao do ftp, para que nossa maquina sirva como um servidor de transferencia de arquivos
+apt install -y proftpd
+
+Configurações FTP
+vim /etc/proftpd/proftpd.conf 
+
+Mudar o nome do servidor em ServerName "senai"
+
+descer a pagina e descomentar o DefaultRoot ~
+
+e mudar o ~ para algum nome de diretorio, pois quando acessarem o servidor, o usuario entrara nesse diretorio
+coloquei o nome do diretorio para /500cavalos/
+
+agora criar o diretorio
+mkdir /500cavalos/
+
+para trocar o nome do servidor
+hostnamectl set-hostname senai
+
+para atualizar o terminal
+bash
