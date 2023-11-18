@@ -18,3 +18,8 @@ less +F /var/log/syslog ou tail
 comando para atualizar o terminal
 bash
 
+para mostrar numerado
+vim set null
+
+vizualizar todos os arquivos
+ls -la

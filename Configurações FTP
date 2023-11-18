@@ -19,3 +19,25 @@ hostnamectl set-hostname senai
 
 para atualizar o terminal
 bash
+
+arrumar o nome de servidor e ip
+vim /etc/hosts
+mudar para essas Configurações
+127.0.0.1   localhost.localdomain   localhost
+10.0.2.15   senai
+... (deixar as informacoes abaixos)
+
+resetar com o systemctl restart proftpd
+
+criar um usuario para testar o servico
+adduser ftpuser
+password ftpuser
+
+instalar o servico de ftp
+apt install -y ftp
+
+para acessar o servidor de ftp
+ftp 10.0.2.15
+
+name:ftpuser
+password:ftpuser
