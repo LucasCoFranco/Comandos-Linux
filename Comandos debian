@@ -23,3 +23,6 @@ vim set null
 
 vizualizar todos os arquivos
 ls -la
+
+comando para listar as linhas 
+cat -n "arquivo"
