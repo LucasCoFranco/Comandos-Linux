@@ -41,3 +41,9 @@ ftp 10.0.2.15
 
 name:ftpuser
 password:ftpuser
+
+//////////////////
+NO CLIENTE WINDOWS
+baixar o filezilla
+
+filezilla serve para entrar no servidor ftp e baixar os arquivos

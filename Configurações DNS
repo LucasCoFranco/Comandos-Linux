@@ -41,6 +41,8 @@ vim.tiny e escrever a zona
 ou copiar de uma ja criada e editar
 cp db.local db.corinthians.com
 
+/etc/bind/db.corinthians.com
+
 comando do vim para substituir algo por outra coisa direto
 ESC :%s/localhost/corinthians.com
 
