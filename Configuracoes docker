@@ -1,0 +1,23 @@
+instalacao docker
+apt install -y docker docker.io 
+
+executar um container
+docker run
+
+processo em background (IMPORTANTE SEMPRE COLOCAR)
+docker -d
+
+especificacao de portas
+docker -p 
+
+escolher o servico que sera rodado
+docker --name app1 nginx(exemplo)
+
+ou seja para executar tudo certinho
+docker run -d -p 80:80 --name app1 nginx
+
+listar os containers em execucao
+docker container ls
+
+listar os containers parados e ativos
+docker container ls -a

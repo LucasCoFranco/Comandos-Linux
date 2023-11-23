@@ -37,7 +37,7 @@ instalar o servico de ftp
 apt install -y ftp
 
 para acessar o servidor de ftp
-ftp 10.0.2.15
+ftp 192.168.60.1
 
 name:ftpuser
 password:ftpuser
@@ -47,3 +47,8 @@ NO CLIENTE WINDOWS
 baixar o filezilla
 
 filezilla serve para entrar no servidor ftp e baixar os arquivos
+
+usar as credencias no firezilla para entrar no servidor ftp
+ftp.corinthians.com ftpuser ftpuser conexao rapida
+ou
+192.168.60.1  ""  ""  conexao rapida
