@@ -21,3 +21,11 @@ docker container ls
 
 listar os containers parados e ativos
 docker container ls -a
+
+entrar no diretorio /var/www
+criar o diretorio sites
+entrar no sites
+criar 10 diretorios de 1 a 10 chamados "site x" onde x é o valor numero do site
+e colocar nesses diretorios o texto "site x"
+echo "site x" > sitex/index.html
+
