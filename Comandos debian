@@ -21,7 +21,7 @@ bash
 para mostrar numerado
 vim set null
 
-vizualizar todos os arquivos
+vizualizar todos os arquivos com as permissões
 ls -la
 
 comando para listar as linhas 
