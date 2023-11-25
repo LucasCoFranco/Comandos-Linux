@@ -1,3 +1,6 @@
+diretorio usado
+/var/www/sites
+
 instalacao docker
 apt install -y docker docker.io 
 
