@@ -52,3 +52,4 @@ docker run -d -p 800x/80 --name sitex -v /var/www/sites/sitex:/usr/share/nginx/h
 
 caso de erro 
 echo site x > sitex/index.html
+

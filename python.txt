@@ -1,0 +1,20 @@
+instalacao do python
+apt install -y python3 python3-pip
+
+instalacao do flask (biblioteca do python para criacao de paginas)
+pip3 install flask
+
+criacao da pagina
+vim app.py
+
+nesse arquivo escrever
+from flask import flask
+
+app = Flask(__name__)
+
+@app.route("/")
+def hello_world():
+    return "Hello World"
+
+if __name__ == '__main__':
+    app.run(port=80, host='0.0.0.0')
