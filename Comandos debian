@@ -26,3 +26,8 @@ ls -la
 
 comando para listar as linhas 
 cat -n "arquivo"
+
+
+instrucoes para copiar e colar no vim
+esc y + (o tanto de linhas que voce quer copiar) + y
+e para colar apertar p (ou esc p)

@@ -53,3 +53,17 @@ docker run -d -p 800x/80 --name sitex -v /var/www/sites/sitex:/usr/share/nginx/h
 caso de erro 
 echo site x > sitex/index.html
 
+vim app.py
+
+criacao de imagem personalizada de container
+vim Dockerfile
+
+e no Dockerfile
+FROM python
+RUN pip install flask
+CMD ["python". "app.py"]
+COPY app.py /app.py
+EXPOSE 80
+
+para executar 
+docker build -t bolodepython
