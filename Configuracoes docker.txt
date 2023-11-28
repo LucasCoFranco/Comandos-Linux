@@ -67,3 +67,8 @@ EXPOSE 80
 
 para executar 
 docker build -t bolodepython
+
+agora colocar o container em acao
+docker run -d -p 8080:80 --name bolo bolodepython
+ir no windows e digitar no navegador
+192.168.60.1:8080/login
