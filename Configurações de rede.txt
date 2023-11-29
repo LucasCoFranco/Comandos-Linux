@@ -67,6 +67,11 @@ vim.tiny /etc/dhcp/dhcpd.conf
 descomentar as linhas options domain-name e options domain-name-servers
 descer ate o This is very basic subnet declaration e descomentar a linha do subnet, range e option routers e configurar
 essas informacoes de acordo com as suas informacoes da rede
+ex: 
+subnet 192.168.60.0 netmask 255.255.255.0 {
+     range 192.168.60.10 192.168.60.20
+     option routers 192.168.60.1;           
+}
 
 depois de configurado, reiniciar o servico 
 systemctl restart isc-dhcp-server
