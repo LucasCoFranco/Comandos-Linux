@@ -17,8 +17,8 @@ def hello_world():
     return "Hello World"
 
 @app.route("/logout")
-def hello_world():
-    return "Hello World"
+def logout():
+    return "Isso e a tela de logout"
 
 if __name__ == '__main__':
     app.run(port=80, host='0.0.0.0')
