@@ -58,7 +58,7 @@ systemctl status bind9
 depois adicionar no name server
 vim /etc/resolv.conf
 e escrever de baixo das que ja ta escrito
-nameserver 10.0.2.15 #ip
+nameserver 192.168.60.1 #ip
 
 testar usando
 nslookup corinthians.com 192.168.60.1
