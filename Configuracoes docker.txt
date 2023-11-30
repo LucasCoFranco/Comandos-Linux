@@ -42,7 +42,7 @@ e para criar o arquivo index.html
 for x in 1 2 3 4 5 6 7 8 9 10; do echo "site $x" > site$x/index.html; done 
 
 criação de container com arquivo dentro dele
-docker run -d -p 8001/80 --name site1 -v /var/www/sites/site1:/usr/share/nginx/html nginx
+docker run -d -p 8001:80 --name site1 -v /var/www/sites/site1:/usr/share/nginx/html nginx
 
 entrar no container no cliente windows pelo navegador pela porta designada
 192.168.60.1:8001
