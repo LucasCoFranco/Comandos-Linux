@@ -1,0 +1,12 @@
+# verifique os discos dentro do servidor com o comando:
+lsblk ou fdisk -l
+
+#formate o disco sda e sdc utilizando o comando:
+fdisk <nome do dispositivo>
+#utilize a opcao <M> para ver a lista de opcoes
+#crie uma particao de disco com a opcao <n>
+#logo apos utilize a particao primaria com a opcao <p>
+#de enter nas ultimas duas configuracoes deixandoas padrao
+#para salvar as alteracoes utilize a opcao w
+
+mkfs.ext4 sda1 | sdc1 #makefilesystem
