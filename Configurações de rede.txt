@@ -57,10 +57,10 @@ instalar o isc dhcp para baixar o dhcp dinamico
 apt install -y isc-dhcp-server (se dar erro quer dizer que deu certo)
 
 para configurar o dhcp dinamico
-vim.tiny /etc/default/isc-dhcp-server e escrever na INTERFACESv4 ou 6, a interface de rede que quer uma rede, no caso coloquei enp0s8
+vim.tiny /etc/default/isc-dhcp-server.service e escrever na INTERFACESv4 ou 6, a interface de rede que quer uma rede, no caso coloquei enp0s8
 
 para resetar o servico
-systemctl restart isc-dhcp-server
+systemctl restart isc-dhcp-server.service
 
 em caso de erro no passo de cima
 vim.tiny /etc/dhcp/dhcpd.conf
@@ -74,7 +74,7 @@ subnet 192.168.60.0 netmask 255.255.255.0 {
 }
 
 depois de configurado, reiniciar o servico 
-systemctl restart isc-dhcp-server
+systemctl restart isc-dhcp-server.service
 
 Para ver os logs (principalmente para logs de erro)
 less +F /var/log/syslog
