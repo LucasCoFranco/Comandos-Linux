@@ -30,6 +30,9 @@ cat -n "arquivo"
 listar os users
 cat /etc/passwd
 
+listar grupos
+less /etc/group
+
 instrucoes para copiar e colar no vim
 esc y + (o tanto de linhas que voce quer copiar) + y
 e para colar apertar p (ou esc p)
