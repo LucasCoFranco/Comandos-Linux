@@ -27,6 +27,8 @@ ls -la
 comando para listar as linhas 
 cat -n "arquivo"
 
+listar os users
+cat /etc/passwd
 
 instrucoes para copiar e colar no vim
 esc y + (o tanto de linhas que voce quer copiar) + y
